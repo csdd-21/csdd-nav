@@ -1,0 +1,181 @@
+@color: rgb(128, 130, 128);
+@bgColor: rgb(216, 234, 217);
+@loadColor: rgb(174, 197, 175);
+
+@media (max-width: 600px) {
+  .home {
+    padding-top: 52px;
+
+    .content {
+      display: block;
+
+      img {
+        width: 100%;
+      }
+
+      .info {
+        width: 100%;
+
+        .desc {
+          height: 100%;
+        }
+
+      }
+    }
+  }
+
+  .filter {
+    margin-left: 1rem;
+  }
+
+}
+
+@media (min-width: 600px) {
+  .home {
+    padding-top: 16px;
+
+    .contentWrapper {
+      padding: 0 100px;
+
+      .content {
+        display: flex;
+
+        img {
+          width: 50%;
+        }
+
+        .info {
+          width: 50%;
+
+          .desc {
+            height: 147px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+          }
+
+          .el-button {
+            position: absolute;
+            right: 18px;
+            bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .filter {
+    margin-left: 11.5rem;
+  }
+
+  .page {
+    margin-left: 11rem;
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .contentWrapper {
+    .icon-empty {
+      display: block;
+      font-size: 32px;
+      color: @color;
+    }
+
+    .el-loading-spinner .el-loading-text {
+      color: @loadColor;
+      font-weight: 700;
+    }
+
+    .el-loading-spinner i {
+      color: @loadColor;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    .el-loading-mask {
+      // background-color: rgb(255, 255, 255);
+    }
+
+    .content {
+      margin: 20px 0;
+
+      &:hover {
+        box-shadow: 0 2px 16px 0 saturate(@bgColor, 1);
+      }
+
+      img {
+        height: 280px;
+        object-fit: cover;
+        -o-object-position: top;
+        object-position: top;
+        padding: 10px 20px 10px 10px;
+        box-sizing: border-box;
+      }
+
+      .info {
+        padding: 1rem 0;
+        cursor: default;
+
+        b {
+          font-size: 1.8rem;
+          padding-bottom: 0.4rem;
+        }
+
+        .desc {
+          display: block;
+          width: 100%;
+          font-size: 1.4rem;
+          line-height: 28px;
+          padding: 8px 0 10px 0;
+        }
+
+        .el-button {
+          background-color: fade(@bgColor, 50%);
+          border-color: fade(@bgColor, 20%);
+          padding: 8px 8px;
+          animation-name: btn;
+          animation-duration: 0.8s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  .page {
+    display: flex;
+    justify-content: start;
+    color: @color;
+
+    .el-pagination__jump {
+      color: @color;
+    }
+
+    .total {
+      margin-top: 6px;
+    }
+  }
+}
+
+@keyframes btn {
+  from {
+    background: fade(@bgColor, 50%);
+    color: fade(@color, 85%);
+    // transform:scale(1) ;
+  }
+
+  to {
+    background: fade(@bgColor, 30%);
+    color: fade(@color, 50%);
+    transform: scale(1.05);
+  }
+}

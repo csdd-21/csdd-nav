@@ -1,0 +1,136 @@
+@color_bright: rgb(84, 84, 84);
+@borderColor_bright: rgb(148, 196, 211);
+
+@color_warm: rgb(84, 84, 84);
+@borderColor_warm: rgb(248, 191, 171);
+
+@color_dark: rgb(150, 150, 150);
+@borderColor_dark: rgb(150, 150, 150);
+
+.websites_bright {
+  .theme(@color_bright, @borderColor_bright)
+}
+
+.websites_warm {
+  .theme(@color_warm, @borderColor_warm)
+}
+
+.websites_dark {
+  .theme(@color_dark, @borderColor_dark)
+}
+
+.theme(@color, @borderColor) {
+  .websites {
+    padding: 20px;
+    padding-right: 0;
+    box-sizing: border-box;
+    color: @color;
+
+    .content {
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      padding-bottom: 0.5rem;
+
+      .part {
+        height: 100%;
+        width: 100%;
+
+        .partTitle {
+          height: 2rem;
+          margin-top: 0.5rem;
+          padding-bottom: 3rem;
+          font-weight: 800;
+          font-size: 1.6rem;
+          color: @borderColor;
+          border-bottom: 1px solid @borderColor;
+
+          .addBtn {
+            position: absolute;
+            right: 0;
+            padding-right: 20px;
+            cursor: pointer;
+            font-size: 18px;
+
+            &:hover {
+              font-weight: 800;
+              opacity: 0.8;
+            }
+          }
+        }
+
+        .partContent {
+          &:last-child {
+            margin-bottom: 2rem;
+          }
+
+          .info {
+            // margin-top: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            justify-content: start;
+            padding: 1.25rem;
+            opacity: 0.8;
+            border: 1px solid @borderColor;
+
+            &:hover {
+              transform: translateY(-1.5px);
+              box-shadow: 0 2px 16px 0 saturate(@borderColor, 1);
+            }
+
+            .one {
+              background-color: pink;
+              width: 80%;
+              display: flex;
+              justify-content: start;
+
+         
+                img {
+                  height: 1.5rem;
+                  width: 1.5rem;
+                  line-height:22px;
+
+                  // margin-top: -2.5px;
+                }
+          
+
+              .url {
+                // display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding-left: 1rem;
+                line-height: 1.5rem;
+                font-size: 1.4rem;
+                color: @color;
+              }
+            }
+
+            .two {
+              background-color: gray;
+              width: 20%;
+              text-align: right;
+
+              i {
+                margin-left: 5px;
+              }
+            }
+
+
+
+
+
+            .icon-cuo {
+              // position: absolute;
+              // right:0;
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      text-align: center;
+    }
+  }
+}

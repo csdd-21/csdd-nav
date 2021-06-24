@@ -1,0 +1,83 @@
+@color: rgb(194, 194, 194);
+@bgColor: rgb(247, 251, 247);
+
+.filterCond {
+  .title {
+    color: @color;
+    font-weight: 800;
+  }
+
+  .search {
+    margin-bottom: 20px;
+
+    .el-input {
+      width: 60%;
+      &:hover,&:focus,&:active{
+        border-color:@color;
+      }
+    }
+
+    .el-button {
+      margin-left: 10px;
+      padding: 8px 12px;
+      color:@color;
+      //  &:first-child{
+      //   background-color: @bgColor;
+      //  }
+      &:hover,&:focus{
+      
+       background-color:@bgColor;
+       color:@color;
+       border-color:@bgColor;
+      }
+    }
+  }
+
+  .el-checkbox-button__inner {
+    color: @color;
+    border-color: fade(@color, 60%);
+    border-left: 1px solid fade(@color, 60%);
+    box-shadow: none;
+
+    &:hover {
+      color: @color;
+      border-color: fade(@color, 60%);
+      background-color: fade(@color, 25%);
+      box-shadow: none;
+    }
+  }
+
+  .el-checkbox-button.is-checked .el-checkbox-button__inner {
+    color: @color;
+    border-color: fade(@color, 60%);
+    background-color: fade(@color, 25%);
+    box-shadow: none;
+  }
+
+  .el-checkbox-button.is-checked:first-child .el-checkbox-button__inner {
+    border-left-color: fade(@color, 60%);
+  }
+
+  .el-checkbox-button.is-focus .el-checkbox-button__inner {
+    color: @color;
+    border-color: fade(@color, 60%);
+  }
+
+  .el-radio-button__inner {
+    color: @color;
+
+    &:hover {
+      color: @color;
+      border-color: fade(@color, 60%);
+      background-color: fade(@color, 25%);
+      box-shadow: none;
+    }
+  }
+
+  .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    color: @color;
+    border-color: fade(@color, 60%);
+    background-color: fade(@color, 25%);
+    box-shadow: none;
+  }
+}

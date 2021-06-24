@@ -1,0 +1,93 @@
+@color: rgb(135, 137, 138);
+@bgColor: rgb(223, 236, 242);
+
+// 滚动条
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(53, 3, 3);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: gray;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+// 弹出框
+.infoBox {
+  .el-message-box__title {
+      color: @color;
+      font-weight: 700;
+      margin: 4px 0;
+  }
+
+  .el-message-box__header {
+      border-bottom: solid 1px @color;
+      margin-bottom: 10px;
+  }
+
+  .el-message-box__close {
+      color: @color;
+
+      &:hover {
+          color: @color;
+          font-weight: 700;
+      }
+  }
+
+  .el-message-box__message p {
+      color: @color;
+  }
+
+  .el-button--primary {
+      background-color: @bgColor;
+      color: @color;
+      border-color: @bgColor;
+      margin-bottom: 4px;
+
+      &:hover {
+          background-color: fade(@bgColor, 60%);
+          font-weight: 700;
+          border-color: fade(@bgColor, 60%);
+      }
+  }
+
+}
+
+.infoBoxCancle {
+  background-color: rgb(255, 255, 255);
+  color: @color;
+  border-color: @bgColor;
+
+  &:hover {
+      background-color: fade(@bgColor, 60%);
+      color: @color;
+      font-weight: 700;
+      border-color: fade(@bgColor, 60%);
+  }
+
+}
+
+// App.vue
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-size: 10px;
+  #app {
+    height: 100vh;
+    width: 100%;
+  }
+}
+

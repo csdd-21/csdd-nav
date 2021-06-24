@@ -1,0 +1,114 @@
+{
+  "id": "2543561",
+  "name": "csdd-proj",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14981259",
+      "name": "coffee",
+      "font_class": "coffee",
+      "unicode": "e716",
+      "unicode_decimal": 59158
+    },
+    {
+      "icon_id": "18799715",
+      "name": "默认图片",
+      "font_class": "morentupian",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7325997",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "16618154",
+      "name": "edit",
+      "font_class": "edit2",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "1393639",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "1017032",
+      "name": "edit",
+      "font_class": "edit1",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "2699977",
+      "name": "错",
+      "font_class": "cuo",
+      "unicode": "e723",
+      "unicode_decimal": 59171
+    },
+    {
+      "icon_id": "7581488",
+      "name": "blog",
+      "font_class": "blog",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "8309336",
+      "name": "省略",
+      "font_class": "untitled",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "9926999",
+      "name": "中文",
+      "font_class": "zhongwen",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "9927000",
+      "name": "英文",
+      "font_class": "yingwen",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "902008",
+      "name": "back",
+      "font_class": "back",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "4315844",
+      "name": "line",
+      "font_class": "fuzhushuxian",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "8760187",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "18991500",
+      "name": "theme-palette-fill",
+      "font_class": "theme-palette-fill",
+      "unicode": "e823",
+      "unicode_decimal": 59427
+    }
+  ]
+}

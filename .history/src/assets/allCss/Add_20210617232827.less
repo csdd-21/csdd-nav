@@ -1,0 +1,41 @@
+@color: rgb(135, 137, 138);
+@bgColor: rgb(223, 236, 242);
+
+.add {
+    .el-form-item {
+        &:nth-child(1) {
+            
+        }
+        &:nth-child(2) {
+            
+        }
+        &:nth-child(3) {
+            height: 1600px;
+        }
+
+
+        .el-input {
+            width: 75%;
+
+            /deep/ .el-input__inner:hover,
+            /deep/ .el-input__inner:focus {
+                border-color: @color;
+            }
+        }
+
+        img {
+            height: 36px;
+            width: 36px;
+        }
+
+        .reset {
+            margin-left: -5px;
+        }
+
+        .el-button--primary {
+            color: @color;
+            background-color: @bgColor;
+            border-color: @bgColor;
+        }
+    }
+}

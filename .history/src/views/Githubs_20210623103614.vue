@@ -1,0 +1,29 @@
+<template>
+  <div class="wrapper">
+    本页内容已独立分离到csdd-plugin项目中
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Githubs',
+  components: {},
+  props: {},
+  data() {
+    return {
+    };
+  },
+  watch: {},
+  computed: {},
+  methods: {},
+  created() {},
+  mounted() {
+    console.log('githubs mounted');
+    
+  }
+};
+</script>
+
+<style scoped>
+
+</style>

@@ -1,0 +1,155 @@
+// 滚动条
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgb(53, 3, 3);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: gray;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+// 多媒体
+@media (max-width: 600px) {
+  .el-header {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .navSm {
+    display: none;
+    justify-content: center;
+  }
+}
+
+// App.vue
+@color: rgb(128, 130, 128);
+@bgColor: rgb(216, 234, 217);
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  #app {
+    position: relative;
+    min-height: 100vh;
+
+    .el-container {
+      margin: 0;
+      padding: 0;
+
+      .navSm {
+        min-height: 5vh;
+        background-color: @bgColor;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        color: @color;
+        font-weight: 700;
+
+        .nav {
+          span:nth-child(1) {
+            padding: 1.2rem 0.8rem;
+          }
+
+          span:nth-child(2) {
+            padding: 1rem;
+            text-align: right;
+          }
+        }
+
+        .navTabs {
+          background-color: @bgColor;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          z-index: 999;
+          box-shadow: 0 2px 16px 0 @bgColor;
+
+          i {
+            text-align: right;
+            padding: 1rem;
+            box-sizing: border-box;
+          }
+
+          span {
+            margin: 0 1rem 1rem 1rem;
+            border-bottom: 1px solid @color;
+          }
+        }
+      }
+
+      .el-header {
+        min-height: 6vh;
+        padding: 0;
+        z-index: 999;
+
+        .navLg {
+          background-color: @bgColor;
+          width: 100%;
+          position: fixed;
+          line-height: 3.5rem;
+          display: flex;
+          justify-content: space-between;
+          padding-right: 6rem;
+
+          .head {
+            color: @color;
+            font-size: 2rem;
+            font-weight: 700;
+            cursor: pointer;
+            padding-left: 11rem;
+            padding-top: 10px;
+          }
+
+          .el-tabs__item {
+            color: @color;
+            font-weight: 600;
+
+            &:hover {
+              color: fade(@color, 80%);
+            }
+          }
+
+          .el-tabs__item.is-active {
+            font-weight: 700;
+          }
+
+          .el-tabs__active-bar {
+            background-color: @color;
+          }
+        }
+      }
+
+      .el-footer {
+        position: absolute;
+        bottom: 0;
+        background-color:rgb(0,0,0);
+        color: #ffffff;
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
