@@ -11,7 +11,7 @@
 ```
 # csdd-nav 根路径
 npm i 
-npm run server
+npm run serve
 # server 文件夹 （记得先启用mongodb）
 nodemon index.js
 ```
