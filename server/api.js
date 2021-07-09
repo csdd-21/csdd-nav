@@ -22,52 +22,64 @@ app.get('/menu', function (req, res) {
             }
         },
         { $sort: { "flag": 1 } },
-    ], function (err, doc) {
-        res.json(doc);
+    ], function (err, data) {
+        console.log('/menu err ---', err, '/menu data ---', data);
+        if (err) {
+            res.send({ status: 401, message: '查询失败', error: err });
+        } else {
+            res.send({ status: 200, message: "查询成功", data: data })
+        }
     })
 })
 
-app.get('/data/cn', function (req, res) {
-    models.Websites_CN.aggregate([
-        // { $sort: { "sequence": 1 } },
-        {
-            $group: {
-                _id: "$parent",
-                flag: { $first: '$flag' },
-                parent: { $first: '$parent' },
-                children: {
-                    $push: '$$ROOT'
+app.get('/websites', function (req, res) {
+    // 局部刷新
+    if (req.query.type == 'partGet') {
+        models.Website.find({ flag: req.query.flag, parent: req.query.parent, })
+            .then((data) => {
+                console.log('/websites partGet data ---', data)
+                let resData = {
+                    _id: req.query.parent,
+                    flag: req.query.flag,
+                    parent: req.query.parent,
+                    children: data
                 }
-            }
-        },
-        { $sort: { "flag": 1 } },
-    ], function (err, doc) {
-        res.json(doc);
-    })
-})
+                res.send({ status: 200, message: "查询成功", data: resData })
+            })
+        return
+    }
 
-app.get('/data/en', function (req, res) {
-    models.Websites_EN.aggregate([
-        { $sort: { "sequence": 1 } },
-        {
-            $group: {
-                _id: "$parent",
-                flag: { $first: '$flag' },
-                children: {
-                    $push: '$$ROOT'
+    // 初始化
+    if (req.query.type == 'allGet') {
+        models.Website.aggregate([
+            // { $sort: { "sequence": 1 } },
+            {
+                $group: {
+                    _id: "$parent",
+                    flag: { $first: '$flag' },
+                    parent: { $first: '$parent' },
+                    children: {
+                        $push: '$$ROOT'
+                    }
                 }
+            },
+            { $sort: { "flag": 1 } },
+        ], function (err, data) {
+            console.log('/websites allGet err ---', err, '/websites allGet data ---', data);
+            if (err) {
+                res.send({ status: 401, message: '查询失败', error: err });
+            } else {
+                res.send({ status: 200, message: "查询成功", data: data })
             }
-        },
-        { $sort: { "flag": 1 } },
-    ], function (err, doc) {
-        res.json(doc);
-    })
+        })
+        return
+    }
 })
 
 // 临时上传
 let upload = multer({ dest: 'tmp_uploads/' });
 app.post("/upload", upload.single('file'), function (req, res, next) {
-    console.log('upload req ---', req.body);
+    console.log('/upload req ---', req.body);
     let targetPath = req.file.path + "." + req.file.originalname.split(".")[1];
 
     fs.rename(path.join(process.cwd(), "/" + req.file.path), path.join(process.cwd(), targetPath), function (err) {
@@ -76,35 +88,32 @@ app.post("/upload", upload.single('file'), function (req, res, next) {
         }
         res.send({ status: 200, message: "上传图片成功", data: { url: targetPath } })
     })
-    console.log('upload req.file ---', req.file, 'upload url ---', targetPath);
+    console.log('/upload req ---', req.file, '/upload url ---', targetPath);
 });
 
 // 确认提交
-let submit = multer({ dest: 'tmp_uploads/' });
 app.post("/submit", upload.single('file'), function (req, res, next) {
     // 校验
-    console.log('submit req ---', req.body);
-    if (!req.body.title || + !req.body.url || !req.body.icon) {
+    console.log('/submit req ---', req.body);
+    if (!req.body.title_cn || + !req.body.url || !req.body.iconPath) {
         return res.send({ status: 412, message: "参数不能为空" })
     }
+
     // 提交图片
-    let targetPath = '/favicon/' + req.body.title + '.' + req.body.icon.split('\\')[1].split('.')[1]
-    fs.rename(path.join(process.cwd(), "/" + req.body.icon), path.join(process.cwd(), '../src/assets' + targetPath), function (err) {
-        if (err) {
-            console.log('submit err ---', err);
-            return res.send({ status: 400, message: "提交图片失败", error: err })
-        }
-    })
+    let targetPath = '/favicon/' + req.body.title_cn.replace(/\s/g, "") + '_' + Date.now() + '.' + req.body.iconPath.split('\\')[1].split('.')[1]
+    fs.renameSync(path.join(process.cwd(), "/" + req.body.iconPath), path.join(process.cwd(), targetPath))
+
     // 插入数据库
-    models.Websites_CN({
+    models.Website({
         parent: req.body.parent,
         flag: req.body.flag,
-        title: req.body.title,
+        title_cn: req.body.title_cn,
+        title_en: req.body.title_en,
         sequence: 1,
         url: req.body.url,
-        icon: targetPath
+        iconPath: targetPath
     }).save((err, data) => {
-        console.log('err --', err, 'data --', data);
+        console.log('/submit err ---', err, '/submit data ---', data);
         if (err) {
             res.send({ status: 401, message: '提交失败', error: err });
         } else {
@@ -115,34 +124,29 @@ app.post("/submit", upload.single('file'), function (req, res, next) {
 
 // 编辑
 app.post("/edit", function (req, res) {
-    console.log('edit req ---', req.body);
-    if (!req.body.title || + !req.body.url || !req.body.icon) {
+    console.log('/edit req ---', req.body);
+    if (!req.body.title_cn || + !req.body.url || !req.body.iconPath) {
         return res.send({ status: 412, message: "参数不能为空" })
     }
-
     let params = {}
     Object.keys(req.body).forEach((i) => {
         params[i] = req.body[i] || "";
     });
+
     // 替换图片
-    if (req.body.icon.split('\\')[0] == 'tmp_uploads') {
-        console.log('11111111111111');
-        let targetPath = '/favicon/' + req.body.title + '.' + req.body.icon.split('\\')[1].split('.')[1]
-        fs.renameSync(path.join(process.cwd(), "/" + req.body.icon), path.join(process.cwd(), '../src/assets' + targetPath), function (err) {
-            if (err) {
-                console.log('edit err ---', err);
-                return res.send({ status: 400, message: "提交图片失败", error: err })
-            }
-            console.log('11111111111111',"targetPath ----",targetPath,"params----",params);
-        })
-        params.icon = targetPath
+    if (req.body.iconPath.split('\\')[0] == 'tmp_uploads') {
+        let targetPath = '/favicon/' + req.body.title_cn.replace(/\s/g, "") + '_' + Date.now() + '.' + req.body.iconPath.split('\\')[1].split('.')[1]
+        fs.renameSync(path.join(process.cwd(), "/" + req.body.iconPath), path.join(process.cwd(), targetPath))
+        params.iconPath = targetPath
+        fs.unlinkSync(path.join(process.cwd(), req.body.old_iconPath))
     }
 
-    models.Websites_CN
+    // 插入数据库
+    models.Website
         .updateOne({
             _id: req.body._id
         }, params, function (err, data) {
-            console.log("edit req ---", req.body, 'edit err ---', err, 'edit data ---', data);
+            console.log("/edit req ---", req.body, '/edit err ---', err, '/edit data ---', data);
             if (err) {
                 res.send({ 'status': 401, 'message': '编辑失败', 'error': err });
             } else {
@@ -153,12 +157,14 @@ app.post("/edit", function (req, res) {
 
 // 删除
 app.post("/delete", function (req, res) {
-    models.Websites_CN
+    fs.unlinkSync(path.join(process.cwd(), req.body.iconPath))
+    console.log('path.join(process.cwd(), req.body.iconPath)', path.join(process.cwd(), req.body.iconPath))
+    models.Website
         .deleteOne({
             _id: req.body._id
-        }).then(data => {
-            console.log('delete res ---', data);
-            if (data.ok == 0) {
+        }, function (err, data) {
+            console.log("/delete req ---", req.body, '/delete err ---', err, '/delete data ---', data);
+            if (err) {
                 res.send({ 'status': 401, 'message': '删除失败', 'error': err });
             } else {
                 res.send({ 'status': 200, 'message': '删除成功' });

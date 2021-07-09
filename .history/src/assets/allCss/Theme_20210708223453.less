@@ -1,0 +1,38 @@
+@color_bright: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+
+@color_warm: rgb(84, 84, 84);
+@bgColor_warm: rgb(250, 226, 218);
+
+.el-dropdown-menu {
+    // margin: 0;
+    // padding: 0;
+
+    .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:nth-child(1):hover {
+        background-color: @bgColor_bright;
+        color: @color_bright;
+        font-weight: 700;
+    }
+
+    .bright {
+        color: @color_bright;
+        background-color: @bgColor_bright;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:nth-child(2):hover {
+        background-color: @bgColor_warm;
+        color: @color_warm;
+        font-weight: 700;
+    }
+
+    .warm {
+        color: @color_warm;
+        background-color: @bgColor_warm;
+        font-size: 12px;
+        line-height: 28px;
+    }
+}

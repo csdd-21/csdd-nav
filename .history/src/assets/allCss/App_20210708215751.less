@@ -1,0 +1,95 @@
+@color_bright: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+
+@color_warm: rgb(84, 84, 84);
+@bgColor_warm: rgba(250, 226, 218, 0.6);
+
+// 滚动条
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(53, 3, 3);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: gray;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+// 消息提示
+.msgBoxInfo_bright {
+  .msgBoxInfo(@color_bright, @bgColor_bright)
+  background-color: fade(@bgColor, 50%);
+  color: @bgColor;
+  border-color: fade(@color, 50%);
+}
+
+.msgBoxInfo_warm {
+  .msgBoxInfo(@color_warm, @bgColor_warm)
+}
+
+.msgBoxInfo(@color, @bgColor) {
+  background-color: fade(@bgColor, 50%);
+  color: @bgColor;
+  border-color: fade(@color, 50%);
+}
+
+// 弹出框
+.alertBox_bright {
+  .alertBox(@color_bright, @bgColor_bright)
+}
+
+.alertBox_warm {
+  .alertBox(@color_warm, @bgColor_warm)
+}
+
+.alertBox(@color, @bgColor) {
+  .el-message-box__headerbtn:hover .el-message-box__close {
+    color: @color;
+    font-weight: 800;
+  }
+
+  .el-button--default {
+    background-color: rgb(255, 255, 255);
+    color: @color;
+    border-color: @bgColor;
+
+    &:hover,
+    &:focus {
+      background-color: fade(@bgColor, 80%);
+      color: @color;
+      font-weight: 700;
+      border-color: fade(@bgColor, 60%);
+    }
+  }
+
+  .el-button--primary {
+    background-color: fade(@bgColor, 50%);
+    margin-bottom: 4px;
+  }
+}
+
+// App.vue
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-size: 10px;
+
+  #app {
+    height: 100vh;
+    width: 100%;
+  }
+}

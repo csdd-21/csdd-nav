@@ -1,0 +1,96 @@
+@color_bright: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+
+@color_warm: rgb(84, 84, 84);
+@bgColor_warm: rgb(250, 226, 218);
+
+@color_dark: rgb(150, 150, 150);
+@bgColor_dark: rgb(150, 150, 150);
+
+
+.add_bright {
+    .theme(@color_bright, @bgColor_bright);
+}
+
+.add_warm {
+    .theme(@color_warm, @bgColor_warm);
+}
+
+.add_dark {
+    .theme(@color_dark, @bgColor_dark);
+}
+
+.theme(@color, @bgColor) {
+    .add {
+        .el-form-item {
+            &:nth-child(1) {}
+
+            &:nth-child(2) {
+                .el-button {
+                    color: @color;
+                    background-color: @bgColor;
+                    border-color: rgb(220, 223, 230);
+                    margin-left: 20px;
+
+                    &:hover {
+                        font-weight: 700;
+                        background-color: fade(@bgColor, 60%);
+                        border-color: fade(@bgColor, 60%);
+                    }
+
+                    a {
+                        color: @color;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                height: 160px;
+            }
+
+            .el-input {
+                width: 75%;
+
+                /deep/ .el-input__inner:hover,
+                /deep/ .el-input__inner:focus {
+                    border-color: @color;
+                }
+            }
+
+            img {
+                height: 36px;
+                width: 36px;
+            }
+
+            /deep/ .el-upload--picture-card:hover,
+            .el-upload:focus {
+                border-color: @bgColor;
+            }
+        }
+
+        .el-button {
+            &:hover {
+                color: @color;
+                font-weight: 700;
+                background-color: fade(@bgColor, 60%);
+                border-color: @bgColor;
+            }
+        }
+
+        // .sure {
+        //     color: @color;
+        //     background-color: @bgColor;
+        // }
+
+        .el-button--default {
+            color: @color;
+            background-color: @bgColor;
+            border-color: rgb(220, 223, 230);
+        }
+        .el-button {
+            color: red;
+            
+        }
+    }
+}

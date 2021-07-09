@@ -1,0 +1,221 @@
+@color_bright: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+@bgColor_bright_right: rgb(255, 255, 255);
+
+@color_warm: rgb(84, 84, 84);
+@bgColor_warm: rgb(250, 226, 218);
+@bgColor_warm_right: rgb(255, 255, 255);
+
+@color_dark: rgb(150, 150, 150);
+@bgColor_dark: rgb(38, 38, 38);
+@bgColor_dark_right: rgb(38, 38, 38);
+
+.home_bright {
+  .theme(@color_bright, @bgColor_bright, @bgColor_bright_right)
+}
+
+.home_warm {
+  .theme(@color_warm, @bgColor_warm, @bgColor_warm_right)
+}
+
+.home_dark {
+  .theme(@color_dark, @bgColor_dark, @bgColor_dark_right)
+}
+
+.theme(@color, @bgColor, @bgColor_right) {
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: start;
+
+    .menuWrapper {
+      width: 16%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: start;
+      overflow: hidden;
+      background-color: @bgColor;
+      color: @color;
+
+      .header {
+        width: 100%;
+        height: 5vh;
+        position: absolute;
+        top: 0;
+        line-height: 5vh;
+        overflow: hidden;
+        font-size: 1.6rem;
+
+        i {
+          margin: 0 2rem 0 1rem;
+          cursor: pointer;
+          font-size: 1.6rem !important;
+
+          &:hover {
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+
+        a {
+          position: absolute;
+          right: 0;
+          padding-right: 1rem;
+          font-size: 1.6rem !important;
+          .a();
+        }
+      }
+
+      .footer {
+        width: 100%;
+        height: 5vh;
+        position: absolute;
+        bottom: 0;
+        line-height: 5vh;
+        display: flex;
+        justify-content: start;
+
+        i,
+        a,
+        .theme {
+          margin: auto;
+          cursor: pointer;
+
+          &:hover {
+            font-weight: 700;
+            opacity: 0.8;
+          }
+
+          .a();
+        }
+
+
+      }
+
+      .menu {
+        width: 50%;
+        height: 100vh;
+
+        .menuTab {
+          width: 100%;
+          height: 4rem;
+          line-height: 4rem;
+          overflow: hidden;
+          cursor: pointer;
+          border-radius: 2.5px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+          &:hover {
+            font-weight: 700;
+          }
+
+          &:nth-child(1) {
+            font-weight: 700;
+          }
+
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      .subMenu {
+        width: 50%;
+        height: 100vh;
+
+        .subMenuHeader {
+          height: 5vh;
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem;
+          box-sizing: border-box;
+          overflow: hidden;
+          font-size: 1.4rem;
+
+          i {
+            margin-top: -1px;
+            cursor: pointer;
+
+            &:hover {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+
+          a {
+            .a();
+          }
+        }
+
+        .subMenuTab {
+          width: 100%;
+          height: 4rem;
+          line-height: 4rem;
+          padding-left: 1rem;
+          box-sizing: border-box;
+          overflow: hidden;
+          display: block;
+          border-radius: 2.5px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+          font-size: 1.4rem !important;
+          text-decoration: none;
+          color: @color;
+
+          &:hover {
+            font-weight: 700;
+          }
+        }
+
+        .subMenuFooter {
+          width: 50%;
+          height: 5vh;
+          position: absolute;
+          bottom: 0;
+          line-height: 5vh;
+          display: flex;
+          justify-content: start;
+
+          i,
+          .theme,
+          .more {
+            margin: auto;
+            cursor: pointer;
+            font-size: 1.4rem;
+
+            &:hover {
+              font-weight: 700;
+            opacity: 0.8;
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .contentWrapper {
+      background-color: @bgColor_right;
+      width: 84%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      overflow: auto;
+      z-index: 100;
+    }
+  }
+}
+
+.a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,72 @@
+flag,iconPath,parent,sequence,title_cn,title_en,url
+1,imgs/git.png,通用,1,Github,这是个英文标题的测试,https://github.com/
+1,/favicon/baidu.ico,通用,2,百度搜索,,https://www.baidu.com/
+1,/favicon/google.ico,通用,3,谷歌搜索,,https://www.google.com.hk/
+1,/favicon/必应搜索.ico,通用,4,必应搜索,,https://cn.bing.com/
+1,/favicon/wikipedia.ico,通用,5,维基百科,,https://zh.wikipedia.org/wiki/
+1,/favicon/goofleMaps.png,通用,6,谷歌地图,,https://www.google.com/maps
+1,/favicon/baiduMaps.ico,通用,7,百度地图,,https://map.baidu.com/
+1,/favicon/youtube.png,通用,8,youtube,,https://www.youtube.com/
+1,/favicon/bilibili.ico,通用,9,bilibili,,https://www.bilibili.com/
+1,/favicon/豆瓣.png,通用,10,豆瓣,,https://www.douban.com/
+3,/favicon/html.png,官方学习文档,1,HTML 参考手册,,http://t.mb5u.com/html/
+3,/favicon/css.png,官方学习文档,2,CSS 参考手册,,http://t.mb5u.com/css3/
+3,/favicon/Flex 布局.png,官方学习文档,3,Flex 布局,,https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+3,/favicon/ecma.ico,官方学习文档,4,ECMAScript 标准规范,,https://tc39.es/ecma262/
+3,/favicon/javaScript.png,官方学习文档,5,MDN JavaScript,,https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
+3,/favicon/less.ico,官方学习文档,6,Less 官方中文文档,,https://less.bootcss.com/#%E6%A6%82%E8%A7%88
+3,/favicon/sass.png,官方学习文档,7,Sass 官方中文文档,,https://sass-china.com/install/#%E8%B7%A8%E5%B9%B3%E5%8F%B0%EF%BC%88%E7%8B%AC%E7%AB%8B%E5%AE%89%E8%A3%85%EF%BC%89
+3,/favicon/git.png,官方学习文档,8,Git Reference 官方文档,,https://git-scm.com/docs
+3,/favicon/typescript.png,官方学习文档,9,TypeScript 中文手册,,https://typescript.bootcss.com/
+3,/favicon/typescript.png,官方学习文档,10,TypeScript 官方中文文档,,https://www.tslang.cn/docs/home.html
+3,/favicon/vue.png,官方学习文档,11,Vue 官方文档,,https://cn.vuejs.org/v2/guide/
+3,/favicon/vue.png,官方学习文档,12,Vue Router 官方文档,,https://router.vuejs.org/zh/guide/#html 
+3,/favicon/vue.png,官方学习文档,13,Vuex 官方文档,,https://vuex.vuejs.org/zh/guide/
+3,/favicon/vue.png,官方学习文档,14,VuePress 官方文档,,https://vuepress.vuejs.org/zh/guide/#%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84
+3,/favicon/axios.png,官方学习文档,15,axios 官方中文文档,,http://www.axios-js.com/zh-cn/docs/
+3,/favicon/node.jpeg,官方学习文档,16,Node.js API 官方中文文档,,http://nodejs.cn/api/assert.html
+3,/favicon/express.png,官方学习文档,17,Express API Reference 官方中文文档,,https://www.expressjs.com.cn/5x/api.html
+3,/favicon/mongoDB.png,官方学习文档,18,MongoDB 官方中文文档,,https://www.mongodb.org.cn/tutorial/2.html
+3,/favicon/mongoDB.png,官方学习文档,19,MongoDB Manual 官方文档,,https://docs.mongodb.com/manual/
+3,/favicon/mongoDB.png,官方学习文档,20,MongoDB 易百教程文档,,https://www.yiibai.com/mongodb/
+3,/favicon/mysql.png,官方学习文档,21,MySQL 官方中文文档,,https://www.mysqlzh.com/doc/24.html
+3,/favicon/weixin.png,官方学习文档,22,小程序微信开发文档,,https://developers.weixin.qq.com/miniprogram/dev/framework/
+3,/favicon/yin.png,官方学习文档,23,印记中文 前端开发中文文档指南,,https://docschina.org/
+2,/favicon/npm.png,开发辅助工具,1,npm 下载,,https://www.npmjs.com/
+2,/favicon/element.ico,开发辅助工具,3,Element-ui 官网,,https://element.eleme.cn/#/zh-CN/component/installation/
+2,/favicon/bootstrap.ico,开发辅助工具,4,Bootstrap 官网,,https://v3.bootcss.com/css/
+2,/favicon/bootstrap.ico,开发辅助工具,5,Bootstrap Grid 栅格,,https://v3.bootcss.com/examples/grid/
+2,/favicon/iconfont.png,开发辅助工具,6,iconfont 阿里巴巴,,https://www.iconfont.cn/
+2,/favicon/faviconG.png,开发辅助工具,7,Favicon Generator 官网,,https://favicon.io/
+2,/favicon/shields.png,开发辅助工具,8,shields.io 官网,,https://shields.io/
+2,/favicon/pixabay.png,开发辅助工具,9,Pixabay 免费图片素材库,,https://pixabay.com/zh/
+2,/favicon/unsplash.png,开发辅助工具,10,Unsplash免费图片素材库,,https://unsplash.com/
+2,/favicon/colorHunt.png,开发辅助工具,11,Color Hunt 取色配色,,https://colorhunt.co/
+2,/favicon/zhong.ico,开发辅助工具,12,Color 中国传统颜色,,http://zhongguose.com/
+2,/favicon/tpyyes.png,开发辅助工具,13,RGB与16进制颜色值码在线转换器,,https://www.tpyyes.com/tool/rgb.html
+2,/favicon/codepen.png,开发辅助工具,14,CodePen,,https://codepen.io/
+2,/favicon/format.ico,开发辅助工具,15,在线代码格式化,,https://tool.oschina.net/codeformat/json/
+4,/favicon/ziyuan.png,其它-有趣,1,Chinese Etymology 字源网,,https://hanziyuan.net/#home
+4,/favicon/zdic.ico,其它-有趣,2,說文解字,,https://www.zdic.net/zd/sw/
+4,/favicon/jizan.ico,其它-有趣,3,朋友圈集赞P图软件,,https://wejizan.com/
+4,/favicon/3d.png,其它-有趣,4,Liquid Particles 3D,,http://www.spielzeugz.de/html5/liquid-particles-3D/
+4,/favicon/wikiHow.png,其它-有趣,6,wikiHow 生活指南,,https://zh.wikihow.com/%E9%A6%96%E9%A1%B5
+4,/favicon/world.png,其它-有趣,7,世界各国网址大全,,http://www.world68.com/
+4,/favicon/os.ico,其它-有趣,8,仿window网络应用休闲平台,,http://www.25os.com/
+4,/favicon/pulse.png,其它-有趣,9,Make Me Pulse,,http://2017.makemepulse.com/
+4,/favicon/hifly.ico,其它-有趣,10,Airbus A340 | Hi Fly,,https://hifly.aero/fleet/a340/9h-sun/
+4,/favicon/hzp.png,其它-有趣,11,中国化妆品真品防伪码联盟,,http://www.zhenpin.org/
+4,/favicon/cosdna.ico,其它-有趣,12,CosDNA 化妆品成分,,http://www.cosdna.com/chs/?__cf_chl_jschl_tk__=b13872bb7eb40eae4d38a4d6530b6797acc25c7e-1621138212-0-AUJYgcSKewItyFfQVZrZHgbOyFZ-eePo2kRzMj9KVqBPO8tGMzyRYk70e-X1zLqZJQVlNwRNmzb3N9j5f2LHa1alq66X-lh27f8j52yDgVrjEKcn_91UBmaSGZMbNPzhtmNePcmkq3N4aeahbq81WgGqSbkGN7uFL9iwYag8sZh1bReF03nNq0s8-2uf-x6CkqQelvdVG85nm_zsaiNYXPDtShXx-NTMG8d3c97joWLYfU_-26Q4tHk1WI0dceTxd_lAc_liGlroSk37hK-Mr5OTmINaWxEDVj8V5RSUN7_aRGJLNqGF0YSMfrwiTM4_8vMcUR4Pt7TD-2UQJo3cA58BTaOrC2hTwRX3rrvjONDgWPUB_at1f8oTYmVsiwbMhCRclLmt6ngaezkL72HJ0oY
+4,/favicon/mvcat.ico,其它-有趣,13,电影推荐 · MVCAT,,https://www.mvcat.com/
+4,/favicon/pretty.png,其它-有趣,14,Am I pretty or ugly? Face beauty analysis test,,https://www.prettyscale.com/
+4,/favicon/youqu.ico,其它-有趣,15,有趣网址之家,,https://youquhome.com/
+4,/favicon/work.png,其它-有趣,16,我爱工作,,https://ilove.works/
+4,/favicon/forvo.ico,其它-有趣,17,Forvo 发音指南，世界上所有词语的母语发音,,https://zh.forvo.com/
+4,/favicon/designtools.ico,其它-有趣,18,3D设计工具,,https://wangyasai.github.io/designtools.html
+4,/favicon/fdc.ico,其它-有趣,19,FDC面料图书馆,,https://www.fdcfabric.com/
+4,/favicon/bigpixel.ico,其它-有趣,20,千亿像素看中国,,http://pf.bigpixel.cn/zh-CN/
+4,/favicon/coolors.png,其它-有趣,21,Color Schemes Generator 配色器,,https://coolors.co/
+4,/favicon/wallhaven.ico,其它-有趣,22,Awesome Wallpapers 免费电脑壁纸,,https://wallhaven.cc/
+4,/favicon/jiuwa.png,其它-有趣,24,颜文字表情生成器,,https://www.jiuwa.net/ywz/
+4,/favicon/medium.ico,其它-有趣,25,Medium – Where good ideas find you,,https://medium.com/
+2,/favicon/codelf 变量命名神器.png,开发辅助工具,1,codelf 变量命名神器,,https://unbug.github.io/codelf/

@@ -1,0 +1,46 @@
+@color_bright: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+
+@color_warm: rgb(84, 84, 84);
+@bgColor_warm: rgb(250, 226, 218);
+
+@color_dark: rgb(150, 150, 150);
+@bgColor_dark: rgb(38, 38, 38);
+
+.el-dropdown-menu {
+    margin: 0;
+    padding: 0;
+
+    .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:nth-child(2):hover {
+        background-color: @bgColor_bright;
+        color: red;
+    }
+
+    .bright {
+        color: @color_bright;
+        background-color: @bgColor_bright;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:nth-child(2):hover {
+        background-color: @bgColor_warm;
+        color: white;
+    }
+
+    .warm {
+        color: @color_warm;
+        background-color: @bgColor_warm;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .dark {
+        color: @color_dark;
+        background-color: @bgColor_dark;
+        font-size: 12px;
+        line-height: 28px;
+    }
+}

@@ -1,0 +1,24 @@
+@color: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+@bgColor_warm: rgba(250, 226, 218, 0.6);
+
+.el-dropdown-menu {
+
+  .el-dropdown-menu__item {
+    color: @color;
+    // background-color: @bgColor_warm;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 28px;
+&:hover{
+  // background-color: @bgColor_bright;
+  color: @color;
+  font-weight: 700;
+}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+}

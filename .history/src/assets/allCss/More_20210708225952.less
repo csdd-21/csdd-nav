@@ -1,0 +1,33 @@
+@color_bright: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+
+@color_warm: rgb(84, 84, 84);
+@bgColor_warm: rgba(250, 226, 218, 0.6);
+
+.more_bright {
+  /deep/ .el-dropdown-menu {
+    // margin: 0;
+    padding: 0;
+  
+    /deep/  .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:not(.is-disabled):hover {
+      background-color: @bgColor_bright !important;
+      color: rgb(84, 84, 84);
+      font-weight: 700;
+    }
+  }
+}
+
+.more_warm {
+  /deep/ .el-dropdown-menu {
+    // margin: 0;
+    padding: 0;
+  
+    /deep/  .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:not(.is-disabled):hover {
+      background-color: @bgColor_warm !important;
+      color: rgb(84, 84, 84);
+      font-weight: 700;
+    }
+  }
+}

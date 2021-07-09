@@ -1,0 +1,53 @@
+@color_bright: rgb(84, 84, 84);
+@bgColor_bright: rgb(230, 243, 247);
+
+@color_warm: rgb(84, 84, 84);
+@bgColor_warm: rgb(250, 226, 218);
+
+@color_dark: rgb(150, 150, 150);
+@bgColor_dark: rgb(38, 38, 38);
+
+
+    .el-dropdown-menu__item{
+        color:red;
+    }
+.el-dropdown-menu {
+    margin: 0;
+    padding: 0;
+
+    .bright {
+        color: @color_bright;
+        background-color: @bgColor_bright;
+        font-size: 12px;
+        line-height: 28px;
+
+        &:hover {
+            color: @color_bright;
+            background-color: fade(@bgColor_bright, 80%);
+        }
+    }
+
+    .warm {
+        color: @color_warm;
+        background-color: @bgColor_warm;
+        font-size: 12px;
+        line-height: 28px;
+
+        &:hover {
+            color: @color_warm;
+            background-color: fade(@bgColor_warm, 80%);
+        }
+    }
+
+    .dark {
+        color: @color_dark;
+        background-color: @bgColor_dark;
+        font-size: 12px;
+        line-height: 28px;
+
+        &:hover {
+            color: @color_dark;
+            background-color: fade(@bgColor_dark, 80%);
+        }
+    }
+}
