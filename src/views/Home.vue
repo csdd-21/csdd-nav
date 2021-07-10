@@ -30,8 +30,10 @@
         </div>
         <div class="footer" id="footer">
           <Theme />
-          <el-tooltip class="item" effect="dark" content="change language" placement="top">
+          <el-tooltip class="item" v-if="show.cn" effect="dark" content="change language" placement="top">
             <i class="iconfont icon-zhongwen" v-if="show.cn" @click="click_language"></i>
+          </el-tooltip>
+          <el-tooltip class="item" v-if="show.en" effect="dark" content="change language" placement="top">
             <i class="iconfont icon-yingwen" v-if="show.en" @click="click_language"></i>
           </el-tooltip>
           <el-tooltip class="item" effect="dark" content="goto github to see code" placement="top">
