@@ -1,0 +1,671 @@
+[{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5e9"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/谷歌搜索_1625730049412.ico",
+  "parent": "通用",
+  "sequence": 3,
+  "title_cn": "谷歌搜索",
+  "url": "https://www.google.com.hk/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5ea"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/必应搜索.ico",
+  "parent": "通用",
+  "sequence": 4,
+  "title_cn": "必应搜索",
+  "url": "https://cn.bing.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5eb"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/维基百科_1625733561994.ico",
+  "parent": "通用",
+  "sequence": 5,
+  "title_cn": "维基百科",
+  "url": "https://zh.wikipedia.org/wiki/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5ec"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/goofleMaps.png",
+  "parent": "通用",
+  "sequence": 6,
+  "title_cn": "谷歌地图",
+  "url": "https://www.google.com/maps"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5ed"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/baiduMaps.ico",
+  "parent": "通用",
+  "sequence": 7,
+  "title_cn": "百度地图",
+  "url": "https://map.baidu.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5ee"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/youtube.png",
+  "parent": "通用",
+  "sequence": 8,
+  "title_cn": "youtube",
+  "url": "https://www.youtube.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5ef"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/bilibili.ico",
+  "parent": "通用",
+  "sequence": 9,
+  "title_cn": "bilibili",
+  "url": "https://www.bilibili.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f0"
+  },
+  "flag": 1,
+  "iconPath": "/favicon/豆瓣.png",
+  "parent": "通用",
+  "sequence": 10,
+  "title_cn": "豆瓣",
+  "url": "https://www.douban.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f1"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/html.png",
+  "parent": "官方学习文档",
+  "sequence": 1,
+  "title_cn": "HTML 参考手册",
+  "url": "http://t.mb5u.com/html/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f2"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/css.png",
+  "parent": "官方学习文档",
+  "sequence": 2,
+  "title_cn": "CSS 参考手册",
+  "url": "http://t.mb5u.com/css3/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f3"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/Flex 布局.png",
+  "parent": "官方学习文档",
+  "sequence": 3,
+  "title_cn": "Flex 布局",
+  "url": "https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f4"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/ecma.ico",
+  "parent": "官方学习文档",
+  "sequence": 4,
+  "title_cn": "ECMAScript 标准规范",
+  "url": "https://tc39.es/ecma262/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f5"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/javaScript.png",
+  "parent": "官方学习文档",
+  "sequence": 5,
+  "title_cn": "MDN JavaScript",
+  "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f6"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/less.ico",
+  "parent": "官方学习文档",
+  "sequence": 6,
+  "title_cn": "Less 官方中文文档",
+  "url": "https://less.bootcss.com/#%E6%A6%82%E8%A7%88"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f7"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/sass.png",
+  "parent": "官方学习文档",
+  "sequence": 7,
+  "title_cn": "Sass 官方中文文档",
+  "url": "https://sass-china.com/install/#%E8%B7%A8%E5%B9%B3%E5%8F%B0%EF%BC%88%E7%8B%AC%E7%AB%8B%E5%AE%89%E8%A3%85%EF%BC%89"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f8"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/git.png",
+  "parent": "官方学习文档",
+  "sequence": 8,
+  "title_cn": "Git Reference 官方文档",
+  "url": "https://git-scm.com/docs"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5f9"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/typescript.png",
+  "parent": "官方学习文档",
+  "sequence": 9,
+  "title_cn": "TypeScript 中文手册",
+  "url": "https://typescript.bootcss.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5fa"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/typescript.png",
+  "parent": "官方学习文档",
+  "sequence": 10,
+  "title_cn": "TypeScript 官方中文文档",
+  "url": "https://www.tslang.cn/docs/home.html"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5fb"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/vue.png",
+  "parent": "官方学习文档",
+  "sequence": 11,
+  "title_cn": "Vue 官方文档",
+  "url": "https://cn.vuejs.org/v2/guide/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5fc"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/vue.png",
+  "parent": "官方学习文档",
+  "sequence": 12,
+  "title_cn": "Vue Router 官方文档",
+  "url": "https://router.vuejs.org/zh/guide/#html "
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5fd"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/vue.png",
+  "parent": "官方学习文档",
+  "sequence": 13,
+  "title_cn": "Vuex 官方文档",
+  "url": "https://vuex.vuejs.org/zh/guide/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5fe"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/vue.png",
+  "parent": "官方学习文档",
+  "sequence": 14,
+  "title_cn": "VuePress 官方文档",
+  "url": "https://vuepress.vuejs.org/zh/guide/#%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba5ff"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/axios.png",
+  "parent": "官方学习文档",
+  "sequence": 15,
+  "title_cn": "axios 官方中文文档",
+  "url": "http://www.axios-js.com/zh-cn/docs/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba600"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/node.jpeg",
+  "parent": "官方学习文档",
+  "sequence": 16,
+  "title_cn": "Node.js API 官方中文文档",
+  "url": "http://nodejs.cn/api/assert.html"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba601"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/express.png",
+  "parent": "官方学习文档",
+  "sequence": 17,
+  "title_cn": "Express API Reference 官方中文文档",
+  "url": "https://www.expressjs.com.cn/5x/api.html"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba602"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/mongoDB.png",
+  "parent": "官方学习文档",
+  "sequence": 18,
+  "title_cn": "MongoDB 官方中文文档",
+  "url": "https://www.mongodb.org.cn/tutorial/2.html"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba603"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/mongoDB.png",
+  "parent": "官方学习文档",
+  "sequence": 19,
+  "title_cn": "MongoDB Manual 官方文档",
+  "url": "https://docs.mongodb.com/manual/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba604"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/mongoDB.png",
+  "parent": "官方学习文档",
+  "sequence": 20,
+  "title_cn": "MongoDB 易百教程文档",
+  "url": "https://www.yiibai.com/mongodb/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba605"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/mysql.png",
+  "parent": "官方学习文档",
+  "sequence": 21,
+  "title_cn": "MySQL 官方中文文档",
+  "url": "https://www.mysqlzh.com/doc/24.html"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba606"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/weixin.png",
+  "parent": "官方学习文档",
+  "sequence": 22,
+  "title_cn": "小程序微信开发文档",
+  "url": "https://developers.weixin.qq.com/miniprogram/dev/framework/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba607"
+  },
+  "flag": 3,
+  "iconPath": "/favicon/yin.png",
+  "parent": "官方学习文档",
+  "sequence": 23,
+  "title_cn": "印记中文 前端开发中文文档指南",
+  "url": "https://docschina.org/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba608"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/npm下载_1625730075937.png",
+  "parent": "开发辅助工具",
+  "sequence": 1,
+  "title_cn": "npm下载",
+  "url": "https://www.npmjs.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba609"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/Element-ui官网_1625730097307.ico",
+  "parent": "开发辅助工具",
+  "sequence": 3,
+  "title_cn": "Element-ui 官网",
+  "url": "https://element.eleme.cn/#/zh-CN/component/installation/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba60a"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/bootstrap.ico",
+  "parent": "开发辅助工具",
+  "sequence": 4,
+  "title_cn": "Bootstrap 官网",
+  "url": "https://v3.bootcss.com/css/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba60b"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/BootstrapGrid栅格_1625728393066.ico",
+  "parent": "开发辅助工具",
+  "sequence": 5,
+  "title_cn": "Bootstrap Grid 栅格",
+  "url": "https://v3.bootcss.com/examples/grid/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba60c"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/iconfont.png",
+  "parent": "开发辅助工具",
+  "sequence": 6,
+  "title_cn": "iconfont 阿里巴巴",
+  "url": "https://www.iconfont.cn/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba60e"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/shields.png",
+  "parent": "开发辅助工具",
+  "sequence": 8,
+  "title_cn": "shields.io 官网",
+  "url": "https://shields.io/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba60f"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/pixabay.png",
+  "parent": "开发辅助工具",
+  "sequence": 9,
+  "title_cn": "Pixabay 免费图片素材库",
+  "url": "https://pixabay.com/zh/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba610"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/unsplash.png",
+  "parent": "开发辅助工具",
+  "sequence": 10,
+  "title_cn": "Unsplash免费图片素材库",
+  "url": "https://unsplash.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba611"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/colorHunt.png",
+  "parent": "开发辅助工具",
+  "sequence": 11,
+  "title_cn": "Color Hunt 取色配色",
+  "url": "https://colorhunt.co/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba612"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/zhong.ico",
+  "parent": "开发辅助工具",
+  "sequence": 12,
+  "title_cn": "Color 中国传统颜色",
+  "url": "http://zhongguose.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba614"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/codepen.png",
+  "parent": "开发辅助工具",
+  "sequence": 14,
+  "title_cn": "CodePen",
+  "url": "https://codepen.io/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba615"
+  },
+  "flag": 2,
+  "iconPath": "/favicon/format.ico",
+  "parent": "开发辅助工具",
+  "sequence": 15,
+  "title_cn": "在线代码格式化",
+  "url": "https://tool.oschina.net/codeformat/json/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba616"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/ziyuan.png",
+  "parent": "其它-有趣",
+  "sequence": 1,
+  "title_cn": "Chinese Etymology 字源网",
+  "url": "https://hanziyuan.net/#home"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba617"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/zdic.ico",
+  "parent": "其它-有趣",
+  "sequence": 2,
+  "title_cn": "說文解字",
+  "url": "https://www.zdic.net/zd/sw/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba618"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/jizan.ico",
+  "parent": "其它-有趣",
+  "sequence": 3,
+  "title_cn": "朋友圈集赞P图软件",
+  "url": "https://wejizan.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba619"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/3d.png",
+  "parent": "其它-有趣",
+  "sequence": 4,
+  "title_cn": "Liquid Particles 3D",
+  "url": "http://www.spielzeugz.de/html5/liquid-particles-3D/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba61a"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/wikiHow.png",
+  "parent": "其它-有趣",
+  "sequence": 6,
+  "title_cn": "wikiHow 生活指南",
+  "url": "https://zh.wikihow.com/%E9%A6%96%E9%A1%B5"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba61b"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/world.png",
+  "parent": "其它-有趣",
+  "sequence": 7,
+  "title_cn": "世界各国网址大全",
+  "url": "http://www.world68.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba61c"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/os.ico",
+  "parent": "其它-有趣",
+  "sequence": 8,
+  "title_cn": "仿window网络应用休闲平台",
+  "url": "http://www.25os.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba61d"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/pulse.png",
+  "parent": "其它-有趣",
+  "sequence": 9,
+  "title_cn": "Make Me Pulse",
+  "url": "http://2017.makemepulse.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba61e"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/hifly.ico",
+  "parent": "其它-有趣",
+  "sequence": 10,
+  "title_cn": "Airbus A340 | Hi Fly",
+  "url": "https://hifly.aero/fleet/a340/9h-sun/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba61f"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/hzp.png",
+  "parent": "其它-有趣",
+  "sequence": 11,
+  "title_cn": "中国化妆品真品防伪码联盟",
+  "url": "http://www.zhenpin.org/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba620"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/cosdna.ico",
+  "parent": "其它-有趣",
+  "sequence": 12,
+  "title_cn": "CosDNA 化妆品成分",
+  "url": "http://www.cosdna.com/chs/?__cf_chl_jschl_tk__=b13872bb7eb40eae4d38a4d6530b6797acc25c7e-1621138212-0-AUJYgcSKewItyFfQVZrZHgbOyFZ-eePo2kRzMj9KVqBPO8tGMzyRYk70e-X1zLqZJQVlNwRNmzb3N9j5f2LHa1alq66X-lh27f8j52yDgVrjEKcn_91UBmaSGZMbNPzhtmNePcmkq3N4aeahbq81WgGqSbkGN7uFL9iwYag8sZh1bReF03nNq0s8-2uf-x6CkqQelvdVG85nm_zsaiNYXPDtShXx-NTMG8d3c97joWLYfU_-26Q4tHk1WI0dceTxd_lAc_liGlroSk37hK-Mr5OTmINaWxEDVj8V5RSUN7_aRGJLNqGF0YSMfrwiTM4_8vMcUR4Pt7TD-2UQJo3cA58BTaOrC2hTwRX3rrvjONDgWPUB_at1f8oTYmVsiwbMhCRclLmt6ngaezkL72HJ0oY"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba621"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/mvcat.ico",
+  "parent": "其它-有趣",
+  "sequence": 13,
+  "title_cn": "电影推荐 · MVCAT",
+  "url": "https://www.mvcat.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba622"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/pretty.png",
+  "parent": "其它-有趣",
+  "sequence": 14,
+  "title_cn": "Am I pretty or ugly? Face beauty analysis test",
+  "url": "https://www.prettyscale.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba623"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/youqu.ico",
+  "parent": "其它-有趣",
+  "sequence": 15,
+  "title_cn": "有趣网址之家",
+  "url": "https://youquhome.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba624"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/work.png",
+  "parent": "其它-有趣",
+  "sequence": 16,
+  "title_cn": "我爱工作",
+  "url": "https://ilove.works/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba625"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/forvo.ico",
+  "parent": "其它-有趣",
+  "sequence": 17,
+  "title_cn": "Forvo 发音指南，世界上所有词语的母语发音",
+  "url": "https://zh.forvo.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba626"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/designtools.ico",
+  "parent": "其它-有趣",
+  "sequence": 18,
+  "title_cn": "3D设计工具",
+  "url": "https://wangyasai.github.io/designtools.html"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba627"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/fdc.ico",
+  "parent": "其它-有趣",
+  "sequence": 19,
+  "title_cn": "FDC面料图书馆",
+  "url": "https://www.fdcfabric.com/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba628"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/bigpixel.ico",
+  "parent": "其它-有趣",
+  "sequence": 20,
+  "title_cn": "千亿像素看中国",
+  "url": "http://pf.bigpixel.cn/zh-CN/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba629"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/coolors.png",
+  "parent": "其它-有趣",
+  "sequence": 21,
+  "title_cn": "Color Schemes Generator 配色器",
+  "url": "https://coolors.co/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba62a"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/wallhaven.ico",
+  "parent": "其它-有趣",
+  "sequence": 22,
+  "title_cn": "Awesome Wallpapers 免费电脑壁纸",
+  "url": "https://wallhaven.cc/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba62b"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/jiuwa.png",
+  "parent": "其它-有趣",
+  "sequence": 24,
+  "title_cn": "颜文字表情生成器",
+  "url": "https://www.jiuwa.net/ywz/"
+},{
+  "_id": {
+    "$oid": "60e5a3d3f247653b9c3ba62c"
+  },
+  "flag": 4,
+  "iconPath": "/favicon/medium.ico",
+  "parent": "其它-有趣",
+  "sequence": 25,
+  "title_cn": "Medium – Where good ideas find you",
+  "url": "https://medium.com/"
+},{
+  "_id": {
+    "$oid": "60e6abdca564d47698f7c463"
+  },
+  "parent": "通用",
+  "flag": 1,
+  "title_cn": "Github",
+  "sequence": 1,
+  "url": "https://github.com/",
+  "iconPath": "/favicon/Github_1625730168233.ico"
+}]
